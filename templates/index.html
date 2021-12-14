@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            h1{text-align: center;}
+            button{text-align: center;}
+            h4{text-align: center;}
+
+            #background-heading {
+            padding: 35px;
+            background: rgb(119, 201, 228);
+            background-clip: padding-box;
+            }
+
+            
+        </style>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Marcus website</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script type="text/javascript">
+            window.history.forward();
+            function noBack() {
+                window.history.forward();
+            }
+        </script>
+    </head>
+    <br>
+    <br>
+    <body style=' background-color:#131A22;color:white '>
+    
+    <div id="background-heading">
+        <h1>Marcus website</h1>
+    </div>
+    <br>
+    <br>
+    <h2>PHYSICS ANSWER-KEY FOR SET <B>055/1/4</B></h2>
+    <br>
+
+    <form style='size-adjust: 100;' method='post'>
+        <table>
+            {% for i in range(1,56) %}
+            <b>Question no : {{i}}</b><br><br>
+             <input type="radio" id="ans" name="answer{{i}}" value="a">
+             <label for="html">a</label><br>
+             <input type="radio" id="ans" name="answer{{i}}" value="b">
+             <label for="css">b</label><br>
+             <input type="radio" id="ans" name="answer{{i}}" value="c">
+             <label for="c">c</label><br>
+             <input type="radio" id="ans" name="answer{{i}}" value="d">
+             <label for="d">d</label><br>
+             <input type="radio" id="ans" name="answer{{i}}" value="e">
+             <label for="e">if not attempted</label><br><br>
+             {% endfor %}
+             <input type="submit" value="GET MARKS">
+             <input type='reset'>
+        </table>
+    </form>
+    <br>
+    <br>
+    
+    <br>
+    <br>
+    <br>
+
+
+
+</body>
+</html>
+
+
